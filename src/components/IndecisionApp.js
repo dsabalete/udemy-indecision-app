@@ -4,6 +4,7 @@ import Action from './Action';
 import Header from './Header';
 import Options from './Options';
 import OptionModal from './OptionModal';
+import Footer from './Footer';
 
 export default function IndecisionApp() {
   const [options, setOptions] = useState([]);
@@ -75,6 +76,7 @@ export default function IndecisionApp() {
         selectedOption={selectedOption}
         handleClearSelectedOption={handleClearSelectedOption}
       />
+      <Footer />
     </div>
   );
 }
