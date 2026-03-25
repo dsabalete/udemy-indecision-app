@@ -26,6 +26,8 @@ module.exports = {
   devtool: 'cheap-module-source-map',
   devServer: {
     static: path.join(__dirname, 'public'),
-    port: 8080
+    port: 8080,
+    historyApiFallback: true,
+    hot: true
   }
 };
