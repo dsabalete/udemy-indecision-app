@@ -1,11 +1,16 @@
 .footer-signature {
   position: fixed;
   bottom: 1rem;
+  left: 1rem;
   right: 1rem;
   font-size: 1.25rem;
   color: #eee;
   opacity: 0.7;
   transition: opacity 0.2s ease;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footer-signature:hover {
