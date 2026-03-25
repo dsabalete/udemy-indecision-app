@@ -1,3 +1,5 @@
+@use '../base/settings' as *;
+
 .ReactModalPortal>div {
   opacity: 0;
 }

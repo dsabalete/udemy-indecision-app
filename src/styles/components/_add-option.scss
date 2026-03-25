@@ -1,3 +1,6 @@
+@use 'sass:color';
+@use '../base/settings' as *;
+
 // Add Option Error
 .add-option-error {
   color: $off-white;
@@ -17,7 +20,7 @@
   background: $dark-blue;
   border: none;
   color: $off-white;
-  border-bottom: .3rem solid darken($dark-blue, 10%);
+  border-bottom: .3rem solid color.scale($dark-blue, $lightness: -10%);
   flex-grow: 1;
   margin: 0 0 $s-size 0;
   padding: $s-size;

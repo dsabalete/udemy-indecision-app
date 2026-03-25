@@ -16,12 +16,16 @@ module.exports = {
       use: [
         'style-loader',
         'css-loader',
-        'sass-loader'
+        {
+          loader: 'sass-loader',
+          options: { api: 'modern' }
+        }
       ]
     }]
   },
-  devtool: 'cheap-module-eval-source-map',
+  devtool: 'cheap-module-source-map',
   devServer: {
-    contentBase: path.join(__dirname, 'public')
+    static: path.join(__dirname, 'public'),
+    port: 8080
   }
 };

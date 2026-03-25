@@ -1,5 +1,8 @@
+@use 'sass:color';
+@use '../base/settings' as *;
+
 .option {
-  border-bottom: 1px solid lighten($light-blue, 10%);
+  border-bottom: 1px solid color.scale($light-blue, $lightness: 10%);
   display: flex;
   justify-content: space-between;
   padding: $l-size $m-size;

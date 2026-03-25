@@ -1,9 +1,15 @@
 {
+    "testEnvironment": "jsdom",
     "setupFiles": [
-        "raf/polyfill",
-        "<rootDir>/src/tests/setupTests.js"
+        "raf/polyfill"
     ],
-    "snapshotSerializers": [
-        "enzyme-to-json/serializer"
-    ]
+    "setupFilesAfterEnv": [
+        "@testing-library/jest-dom"
+    ],
+    "transform": {
+        "^.+\\.jsx?$": "babel-jest"
+    },
+    "moduleNameMapper": {
+        "\\.(css|scss)$": "<rootDir>/src/tests/styleMock.js"
+    }
 }

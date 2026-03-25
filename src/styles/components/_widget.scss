@@ -1,3 +1,6 @@
+@use 'sass:color';
+@use '../base/settings' as *;
+
 // Widget
 .widget {
   background: $light-blue;
@@ -5,7 +8,7 @@
 }
 
 .widget__message {
-  border-bottom: 1px solid lighten($light-blue, 10%);
+  border-bottom: 1px solid color.scale($light-blue, $lightness: 10%);
   color: $off-white;
   margin: 0;
   padding: $l-size;
